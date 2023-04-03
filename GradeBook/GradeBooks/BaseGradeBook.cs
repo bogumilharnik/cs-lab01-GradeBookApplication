@@ -10,7 +10,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GradeBook.GradeBooks
 {
-    public class BaseGradeBook
+    public abstract class  BaseGradeBook
     {
         
         public GradeBookType Type { get; set; }
@@ -24,6 +24,7 @@ namespace GradeBook.GradeBooks
         {
             Name = name;
             Students = new List<Student>();
+            
         }
 
         public void AddStudent(Student student)
